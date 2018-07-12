@@ -1,0 +1,31 @@
+.game {
+  position: relative;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  height: 584px;
+  text-align: center;
+  background-color: #dadada;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.game__inner {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 335px;
+  height: 100%;
+}
+
+@media screen and (max-width: 649px) {
+  .game__inner {
+    width: 296px;
+  }
+}

@@ -1,0 +1,63 @@
+.bigcard {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -148px;
+  padding: 10px 10px 20px;
+  display: none;
+  max-width: 296px;
+  text-align: center;
+  background-color: #e3cd92;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transform: scale(0);
+}
+
+.bigcard_shown {
+  display: block;
+}
+
+.bigcard_scaled {
+  animation-name: scaleBigCard;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.bigcard__img {
+  width: 100%;
+  height: auto;
+}
+
+.bigcard__img,
+.bigcard__title {
+  margin-bottom: 10px;
+}
+
+.bigcard__desc {
+  margin-bottom: 16px;
+}
+
+.bigcard__title {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.bigcard__title_h1 {
+  font-size: 18px;
+}
+
+.bigcard__title_h2 {
+  font-size: 16px;
+}
+
+.bigcard__desc {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+@keyframes scaleBigCard {
+  100% {
+    transform: scale(1);
+  }
+}
